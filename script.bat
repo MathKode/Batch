@@ -9,4 +9,3 @@ FOR /F "delims=: skip=9 tokens=1,2" %%i IN ('netsh wlan show profiles') DO (
 	    netsh wlan show profiles "name=%%a" key=clear | findstr Contenu >> test.txt
         )
 )
-pause

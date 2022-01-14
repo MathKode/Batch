@@ -9,7 +9,7 @@ for /f %%i in ('dir /b') do (
 		echo %%j
 		if %%j == png (
 			echo Deplacement Image
-			cp %%i C:\Users\%username%\Downloads\
+			copy %%i C:\Users\%username%\Downloads\
 			del %%i
 		) else (
 			echo Supp JSON FILE
